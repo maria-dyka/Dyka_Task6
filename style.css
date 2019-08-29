@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+}
+.our-work{
+    width: 100%;
+    height: 862px;
+    background-color: rgb(222, 43, 36);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our-work_name{
+    margin-top: 109px;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.our-work_h{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: center;
+}
+.our-work_description{
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.our-work_line{
+    background-color: white;
+    width: 47px;
+    height: 5px;
+    margin-top: 17px;
+}
+.our-work_gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 73%;
+    height: 59%;
+    margin-top: 47px;
+}
+.our-work_block{
+    height: 50%;
+    width: 25%;
+    background-color: rgb(243, 94, 89);
+}
+.block2{
+    background-image: url("img/photo1.jpg");
+}
+.block4{
+    background-image: url("img/photo5.jpg");
+}
+.block5{
+    background-image: url("img/photo6.jpg");
+}
+.block7{
+    background-image: url("img/photo7.jpg");
+}

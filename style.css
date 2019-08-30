@@ -1,9 +1,13 @@
 *{
     margin: 0;
 }
+.text{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
 .our-work{
     width: 100%;
-    height: 862px;
     background-color: rgb(222, 43, 36);
     display: flex;
     flex-direction: column;
@@ -17,17 +21,11 @@
     align-items: center;
 }
 .our-work_h{
-    color: white;
-    font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 900;
-    text-align: center;
 }
 .our-work_description{
-    color: white;
     font-size: 20px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
 }
 .our-work_line{
     background-color: white;
@@ -39,13 +37,16 @@
     display: flex;
     flex-wrap: wrap;
     width: 73%;
-    height: 59%;
     margin-top: 47px;
+    margin-bottom: 128px;
 }
 .our-work_block{
-    height: 50%;
-    width: 25%;
+    height: 253px;
+    flex-basis: 25%;
     background-color: rgb(243, 94, 89);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .block2{
     background-image: url("img/photo1.jpg");
@@ -58,4 +59,127 @@
 }
 .block7{
     background-image: url("img/photo7.jpg");
+}
+.block_name{
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 25px;
+}
+.block_description{
+    font-size: 14px;
+}
+.block_img{
+    margin-top: 75px;
+}
+
+
+.facebook-analysis{
+    padding-top: 100px;
+    width: 100%;
+    background-color: rgb(18, 135, 191);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.facebook-analysis_name{
+    line-height: 30px;
+}
+.facebook-analysis_h{
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.facebook-analysis_description{
+    font-size: 20px;
+}
+.arrow{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: solid 3px white;
+    background: url("img/icons/arrow.png") no-repeat;
+    background-position: 16px 21px;
+    margin-top: 18px;
+}
+.decoration{
+    width: 63px;
+    height: 31px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.facebook-analysis_form{
+    width: 48%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 950px){
+    .our-work_block{
+        flex-basis: 50%;
+    }
+    .block1{
+        order: 1;
+    }
+    .block2{
+        order: 2;
+    }
+    .block3{
+        order: 4;
+    }
+    .block4{
+        order: 3;
+    }
+    .block5{
+        order: 6;
+    }
+    .block6{
+        order: 5;
+    }
+    .block7{
+        order: 7;
+    }
+    .block8{
+        order: 8;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .our-work_gallery{
+        flex-direction: column;
+    }
+    .our-work_block{
+        flex-basis: 100%;
+    }
+    .block1{
+        order: 1;
+    }
+    .block2{
+        order: 2;
+    }
+    .block3{
+        order: 3;
+    }
+    .block4{
+        order: 4;
+    }
+    .block5{
+        order: 6;
+    }
+    .block6{
+        order: 5;
+    }
+    .block7{
+        order: 8;
+    }
+    .block8{
+        order: 7;
+    }
 }

@@ -74,8 +74,10 @@
 }
 
 
+
 .facebook-analysis{
     padding-top: 100px;
+    padding-bottom: 111px;
     width: 100%;
     background-color: rgb(18, 135, 191);
     display: flex;
@@ -101,14 +103,15 @@
     background: url("img/icons/arrow.png") no-repeat;
     background-position: 16px 21px;
     margin-top: 18px;
+    cursor: pointer;
 }
 .wrapper{
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
-    margin-top: 22px;
     width: 48%;
     position: relative;
+    margin-top: 22px;
 }
 .decoration{
     width: 63px;
@@ -125,6 +128,15 @@
     position: absolute;
     top: 5px;
     left: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.close-symbol{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 20px;
 }
 .facebook-analysis_form{
     border-radius: 2px;
@@ -132,7 +144,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 111px;
 }
 .form_description{
     width: 81%;
@@ -166,8 +177,95 @@
 
 
 
+.get-in-touch{
+    background: rgb(42, 42, 42);
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.get-in-touch_h{
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+.social-networks{
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+.social{
+    width: 45px;
+    height: 45px;
+    border: solid 2px rgb(81, 81, 81);
+    border-radius: 5%;
+}
+.social-networks a:hover{
+    border: solid 2px rgb(221, 43, 35);
+    border-radius: 5%;
+}
+.facebook-logo{
+    background: url("img/icons/icon8.png") center no-repeat;
+}
+.twitter-logo{
+    background: url("img/icons/icon9.png") center no-repeat;
+}
+.google-logo{
+    background: url("img/icons/icon10.png") center no-repeat;
+}
+.linkedIn-logo{
+    background: url("img/icons/icon11.png") center no-repeat;
+}
+.get-in-touch_description{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: rgb(173, 173, 173);
+    font-weight: 200;
+}
+.get-in-touch_form{
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 83px;
+}
+.get-in-touch_email{
+    width: 100%;
+    height: 54px;
+    background: rgb(81, 81, 81);
+    border: none;
+    font-size: 16px;
+    color: rgb(143, 143, 143);
+    padding-left: 21px;
+    margin-bottom: 26px;
+}
+.get-in-touch_submit{
+    width: 22%;
+    background: rgb(42, 42, 42);
+    border: solid 2px rgb(81, 81, 81);
+    border-radius: 5%;
+    height: 50px;
+    color: white;
+    font-weight: 800;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
 
 
+.footer{
+    background: rgb(81, 81, 81);
+}
+.copyright{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(206, 206, 206);
+    padding: 26px 0 26px 0;
+}
 
 
 @media screen and (max-width: 950px){
@@ -200,6 +298,22 @@
     }
 }
 
+@media screen and (max-width: 830px){
+    .form_submit{
+        width: 65%;
+    }
+    .wrapper{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 870px){
+    .get-in-touch_submit{
+        width: 80%;
+    }
+    .social-networks{
+        width: 40%;
+    }
+}
 @media screen and (max-width: 700px){
     .our-work_gallery{
         flex-direction: column;
@@ -230,5 +344,20 @@
     }
     .block8{
         order: 7;
+    }
+}
+@media screen and (max-width: 700px){
+    .close{
+        width: 30px;
+        height: 30px;
+        top: 10px;
+    }
+}
+@media screen and (max-width: 440px){
+   .social-networks{
+       width: 70%;
+   }
+    .copyright{
+        font-size: small;
     }
 }

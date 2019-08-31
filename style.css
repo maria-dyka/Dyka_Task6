@@ -100,8 +100,7 @@
     height: 55px;
     border-radius: 50%;
     border: solid 3px white;
-    background: url("img/icons/arrow.png") no-repeat;
-    background-position: 16px 21px;
+    background: url("img/icons/arrow.png") center no-repeat;
     margin-top: 18px;
     cursor: pointer;
 }
@@ -163,6 +162,10 @@
     font-size: 14px;
     border: solid 1px rgb(216, 216, 216);
 }
+.item:focus{
+    border-radius: 5px;
+    border: solid 1px rgb(17, 135, 191);
+}
 .form_submit{
     width: 24%;
     height: 45px;
@@ -203,7 +206,7 @@
     border: solid 2px rgb(81, 81, 81);
     border-radius: 5%;
 }
-.social-networks a:hover{
+.social:hover{
     border: solid 2px rgb(221, 43, 35);
     border-radius: 5%;
 }
